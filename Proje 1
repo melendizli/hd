@@ -1,0 +1,49 @@
+Selection Projesi
+[22,27,16,2,18,6] -> Insertion Sort
+Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+Big-O gösterimini yazınız.
+Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
+1.	Average case: Aradığımız sayının ortada olması
+2.	Worst case: Aradığımız sayının sonda olması
+3.	Best case: Aradığımız sayının dizinin en başında olması.
+
+[7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız.
+
+Proje 1 - Insertion Sort
+Verilen Dizi: [22,27,16,2,18,6][22, 27, 16, 2, 18, 6]
+________________________________________
+Aşamalar:
+1.	İlk eleman olan 22 zaten sıralı kabul edilir.
+o	[22, 27, 16, 2, 18, 6]
+2.	27, 22'nin ardından gelir. 27 > 22 olduğu için sıralama değişmez.
+o	[22, 27, 16, 2, 18, 6]
+3.	16, 27 ve 22 ile karşılaştırılır. 16, 27'nin ve 22'nin önüne geçer.
+o	[16, 22, 27, 2, 18, 6]
+4.	2, tüm elemanlarla karşılaştırılır ve en başa yerleştirilir.
+o	[2, 16, 22, 27, 18, 6]
+5.	18, 27'nin önüne geçer ancak 22'nin ardından kalır.
+o	[2, 16, 18, 22, 27, 6]
+6.	6, tüm elemanlarla karşılaştırılır ve en başa yerleştirilir.
+o	[2, 6, 16, 18, 22, 27]
+________________________________________
+Big-O Gösterimi:
+•	Insertion Sort'un worst case zaman karmaşıklığı O(n2)O(n^2)'dir, çünkü her eleman için dizinin tamamı taranabilir.
+•	Best case: Dizi zaten sıralıysa O(n)O(n)'dir.
+•	Average case: Elemanlar rastgele sıralıysa O(n2)O(n^2)'dir.
+________________________________________
+18 Sayısı için Time Complexity:
+•	Average case: 18, dizinin ortalarına yakın bir konumdadır ([2,6,16,18,22,27][2, 6, \mathbf{16}, \mathbf{18}, 22, 27]).
+•	Sonuç: 18 sayısı Average Case kapsamına girer.
+________________________________________
+- Selection Sort
+Verilen Dizi: [7,3,5,8,2,9,4,15,6][7, 3, 5, 8, 2, 9, 4, 15, 6]
+________________________________________
+İlk 4 Adım:
+1.	Adım 1: En küçük eleman bulunur (2) ve ilk elemanla yer değiştirilir.
+o	[2, 3, 5, 8, 7, 9, 4, 15, 6]
+2.	Adım 2: Kalan dizideki en küçük eleman (3) bulunur, yerinde kalır.
+o	[2, 3, 5, 8, 7, 9, 4, 15, 6]
+3.	Adım 3: Kalan dizideki en küçük eleman (4) bulunur ve 3. elemanla yer değiştirilir.
+o	[2, 3, 4, 8, 7, 9, 5, 15, 6]
+4.	Adım 4: Kalan dizideki en küçük eleman (5) bulunur ve 4. elemanla yer değiştirilir.
+o	[2, 3, 4, 5, 7, 9, 8, 15, 6]
