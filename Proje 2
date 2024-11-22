@@ -1,0 +1,44 @@
+Merge Sort Projesi
+[16,21,11,8,12,22] -> Merge Sort
+•	Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+•	Big-O gösterimini yazınız.
+
+Proje 2 - Merge Sort
+Verilen Dizi: [16,21,11,8,12,22][16, 21, 11, 8, 12, 22]
+________________________________________
+Aşamalar:
+1.	Diziyi Parçalama:
+o	Dizi sürekli olarak iki alt diziye bölünür: 
+	[16, 21, 11] ve [8, 12, 22]
+	[16] [21, 11] ve [8] [12, 22]
+	[16] [21] [11] ve [8] [12] [22]
+2.	Parçalanmış Dizileri Sıralama ve Birleştirme:
+o	En küçük alt diziler sıralanarak birleştirilir: 
+	[21] ve [11] → [11, 21]
+	[16] ve [11, 21] → [11, 16, 21]
+	[12] ve [22] → [12, 22]
+	[8] ve [12, 22] → [8, 12, 22]
+3.	Son Birleştirme:
+o	[11, 16, 21] ve [8, 12, 22] → [8, 11, 12, 16, 21, 22]
+________________________________________
+Adım Adım Görünüm:
+1.	Parçalama Aşaması:
+[16,21,11,8,12,22]	→	[16,21,11]	[8,12,22]
+[16]	[21,11]		[8]	[12,22]
+[16]	[21]	[11]	[8]	[12]	[22]
+2.	Birleştirme Aşaması:
+[21]+[11]→[11,21]
+[16]+[11,21]→[11,16,21]
+[12]+[22]→[12,22]
+[8]+[12,22]→[8,12,22]
+3.	Sonuç:
+[11,16,21] + [8,12,22] → [8,11,12,16,21,22]
+________________________________________
+Big-O Gösterimi:
+•	Parçalama: Her aşamada dizi ikiye bölünür. Bu işlem O(log n)O(\log n) karmaşıklığındadır.
+•	Birleştirme: Her birleştirme işleminde tüm elemanlar karşılaştırılır. Bu işlem O(n) karmaşıklığındadır.
+•	Toplam Zaman Karmaşıklığı: O(n logn ) 
+________________________________________
+Sonuç:
+•	Merge Sort'un aşamaları yukarıdaki gibi ilerler.
+•	Big-O gösterimi: O(n logn )
